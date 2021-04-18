@@ -1,0 +1,153 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #1e272e;
+    color: #0fbcf9;
+}
+
+.material-icons{
+    font-size: 28pt;
+    color: #485460;
+    text-decoration: none !important;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+.material-icons:hover{
+    font-size: 30pt;
+}
+
+.delete:hover {
+    color:#ff5e57;
+}
+
+h1 {
+    margin: 0;
+}
+
+input {
+    background-color: #485460;
+    border: none;
+    height: 95%;
+    color:  #ffc048;
+    font-size: 28px;
+    width: 90%;
+}:focus{
+    outline: none;
+}
+
+.App {
+    display: flex;
+    justify-content:flex-start;
+    height: 100vh;
+    overflow-x: auto;
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100;
+    padding: 15px;
+    max-width: 33vw;
+    min-width: 20vw;
+}
+
+.ListTitle{
+    display: flex;
+}
+
+.List-elements{
+    padding-left: 2vw;  
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.ListItem {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.ListItemText {
+    flex-grow: 1;
+    font-size: 20pt;
+}.Hover {
+    font-size: 23px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #b8e994;
+}
+
+.undone {
+    color: #ffc048;
+}
+
+.List-add-element {
+    justify-self: flex-end;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+
+.List-add-element span{
+    color: #ffc048;
+}
+
+.List-add-element span:hover{
+    font-size: 28pt !important;
+    animation: spin;
+    animation-duration: .4s;
+} 
+
+
+.Slot{
+    border: thick solid #485460;
+    width: 25vw;
+    min-width: 20vw;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    font-size: 150pt;
+}
+
+.Slot:hover{
+    border: thick solid #0fbcf9;
+}
+
+.Slot span {
+    font-size: 150pt;
+    transition: all 0.4s ease;
+}
+.Slot:hover > span{
+    font-size: 200pt;
+    color: #0fbcf9;
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(180deg);
+    }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+  ::-webkit-scrollbar-track {
+  background:none; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: #485460; 
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #555; 
+} 
