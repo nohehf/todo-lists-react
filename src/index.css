@@ -52,6 +52,7 @@ input {
     min-width: 20vw;
 }
 
+
 .ListTitle{
     display: flex;
 }
@@ -151,3 +152,34 @@ input {
   
   background: #555; 
 } 
+
+
+@media only screen and (max-width: 600px) {
+    .App {
+        display: flex;
+        justify-content:flex-start;
+        flex-direction:column;
+        width: 100vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .List{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+        max-height: 70vh;
+        min-height: 50vh;
+        max-width: unset;
+        min-width: fit-content;
+    }
+
+    .Slot{
+        max-height: 50vh;
+        min-height: 30vh;
+        width: unset;
+        max-width: unset;
+        min-width: fit-content;
+    }
+}
